@@ -1,14 +1,5 @@
 <?php get_header(); ?>    
-		<div class="breadcrumb">
-			<div class="container">
-				<div class="breadcrumb-inner">
-					<div class="subtitle">
-						<h1 class="cs-page-title">Blog Page</h1>
-						<p>Lorem ipsum dolor sit ____, consectetur adipiscing elit.t Nunc __ nisl turpis, vel malesuada ____. </p>
-					</div>                          
-				</div>
-			</div>
-		</div>
+		
 
 		<div class="clear"></div>
 		<div class="clear"></div>    

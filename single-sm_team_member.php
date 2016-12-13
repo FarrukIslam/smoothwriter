@@ -1,14 +1,5 @@
 <?php get_header(); ?>         
-		<div class="breadcrumb">
-			<div class="container">
-				<div class="breadcrumb-inner">
-					<div class="subtitle">
-						<h1 class="cs-page-title">Teacher Detail</h1>
-						<p>Lorem ipsum dolor sit ____, consectetur adipiscing elit.t Nunc __ nisl turpis, vel malesuada ____. </p>
-					</div>                          
-				</div>
-			</div>
-		</div>
+		
 
 		<div class="clear"></div>
 		<div class="clear"></div>   
@@ -58,7 +49,7 @@
 										 
 										<div class="teacher-details">
 												  
-											<p>adipiscing elit. ____ nec nisi vitae nisi _________ porta. Praesent semper bibendum ________. Mauris suscipit convallis ultrices. _______ fringilla sem posuere pulvinar _________. Cras fringilla mauris nec _____ aliquet placerat. Quisque velit ___, mattis nec tempus eget, ________ ut augue. Nullam placerat _________ facilisis. Aenean sed imperdiet _____. Morbi orci arcu, adipiscing ___ posuere at, vestibulum quis _____. Vivamus non augue convallis, ________ ipsum eu, porttitor lorem. _____ euismod sapien eleifend elit ____________ pulvinar. Madipiscing elit. ____ nec nisi vitae nisi _________ porta. Praesent semper bibendum ________. Mauris suscipit convallis ultrices. _______ fringilla sem posuere pulvinar _________. Cras fringilla mauris nec _____ aliquet placerat. Quisque velit ___, mattis nec tempus eget, ________ ut augue. Nullam placerat _________ facilisis. Aenean sed imperdiet _____. Morbi orci arcu, adipiscing ___ posuere at, vestibulum quis _____. Vivamus non augue convallis, ________ ipsum eu, porttitor lorem. _____ euismod sapien eleifend elit ____________ pulvinar. M </p>
+											<p>adipiscing elit.  nec nisi vitae nisi porta. Praesent semper bibendum . Mauris suscipit convallis ultrices.  fringilla sem posuere pulvinar . Cras fringilla mauris nec  aliquet placerat. Quisque velit , mattis nec tempus eget,  ut augue. Nullam placerat facilisis. Aenean sed imperdiet. Morbi orci arcu, adipiscing  posuere at, vestibulum quis . Vivamus non augue convallis, ipsum eu, porttitor lorem.  euismod sapien eleifend elit  pulvinar. Madipiscing elit. nec nisi vitae nisi  porta. Praesent semper bibendum. Mauris suscipit convallis ultrices. fringilla sem posuere pulvinar . Cras fringilla mauris nec  aliquet placerat. Quisque velit , mattis nec tempus eget, ut augue. Nullam placerat  facilisis. Aenean sed imperdiet . Morbi orci arcu, adipiscing posuere at, vestibulum quis . Vivamus non augue convallis, ipsum eu, porttitor lorem. euismod sapien eleifend elit  pulvinar. </p>
 										</div>
 								 
 									</article>

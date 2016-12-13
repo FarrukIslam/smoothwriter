@@ -87,33 +87,11 @@
 
 						    'menu_id'        => 'menus',
 						    'menu_class'        => '',
-						    'container_class' => ' ',
-							'container_id' => ' ',
+						    'container'=> false, 
+						    'menu_class'=> false, 
 						    'fallback_cb'       => 'smoothwriter_default_menu'
 						    ));
 						?>
-
-							<!-- <ul id="menus">
-								
-								<li>
-									<a href="#">
-										<i class="icon-home"></i>Home
-									</a>
-								</li>
-								<li><a href="#">What We Offer</a></li>		
-								<li><a href="#">Serviecs</a>
-									<ul class="">
-										<li><a href="#">Serviecs</a></li>
-										<li><a href="#">Serviecs View</a></li>
-										<li><a href="#">Serviecs Detail</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Features</a></li>			
-								<li><a href="#">Order</a></li>			
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Contact Us</a></li>
-								
-							</ul>	 -->
 						</nav>
 						<!-- Navigation Close -->
 					</div>	
@@ -122,3 +100,14 @@
 			</div>	
 		</header>	
 		<!-- Header Close --> 
+		<div class="breadcrumb">
+			<div class="container">
+				<div class="breadcrumb-inner">
+					<div class="subtitle">
+						<h1 class="cs-page-title">Content Writer</h1>
+					</div>                          
+				</div>
+			</div>
+		</div>
+
+		<div class="clear"></div>

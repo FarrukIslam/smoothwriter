@@ -1,18 +1,6 @@
 <?php 
 /* Template Name: faq */
 get_header(); ?>
-<div class="breadcrumb">
-	<div class="container">
-		<div style="display:none;">
-			<a href="#">iddaa programı</a>
-		</div>
-		<div class="breadcrumb-inner">
-	    	<div class="subtitle">
-	    		<h1 class="cs-page-title">FAQs</h1>
-	    	</div>                         
-	    </div>
-	</div>
-</div>
 
 <div id="main" role="main">
         <!-- Container Start -->
