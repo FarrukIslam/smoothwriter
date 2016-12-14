@@ -808,3 +808,37 @@ select.slectpage {
     margin-bottom: 0px; 
     background: #333 !important;
 }
+
+/* widget's social facebook */
+
+	.facebookOuter {
+		background-color:#F5F2F2; 
+		width:100%; 
+		padding:0;
+		float:left;
+	}
+	.facebookInner {
+		float: left;
+		width: 100%;
+	}
+	.facebook_module, .fb_iframe_widget > span, .fb_iframe_widget > span > iframe {
+	 width: 100% !important;
+	}
+
+	.fb_iframe_widget, .fb-like-box div span iframe {
+	 width: 100% !important;
+	 float: left;
+	}
+/* page */
+.course-detail{
+	margin:50px 0px;
+}	
+ol.breadcrumb li a {
+    color: #fff;
+}
+ol.breadcrumb li {
+    float: left;
+    width: 93px;
+    font-size: 15px;
+    margin-right: -35px;
+}

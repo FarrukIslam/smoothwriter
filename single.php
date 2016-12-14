@@ -2,361 +2,204 @@
 
 
 <div id="main" role="main">
-        <!-- Container Start -->
-            <div class="container">
-                <!-- Row Start -->
-                <div class="row">
-                <div class="col-md-9 ">
-				    <div class="rich_editor_text"></div>
-				    <div class="element_size_100">
-				        <header class="cs-heading-title">
-				            <h2 class="cs-section-title float-left">Blog Large View</h2>
-				        </header>
-				        <div class="postlist blog blog-large lightbox">
-				            <!-- Blog Start -->
-				            <!-- Blog Post Start -->
-				            <article class="cls-post-image post-2788 post type-post status-publish format-standard has-post-thumbnail hentry category-nature tag-illustration tag-interface tag-minimal tag-ministry-of-education">
-				                <figure>
-				                    <a href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/"><img src="http://chimpgroup.com/wp-demo/statfort/wp-content/uploads/2014/01/x01-stat-fort-uni-980x408.jpg.pagespeed.ic.CfKeuT3NbX.webp" alt="" data-pagespeed-url-hash="3704920463" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-				                    </a>
-				                    <figcaption>
-				                        <a class="btnreadmore bgcolr" href=""> <em class="fa fa-long-arrow-right"></em>
-				                        </a>
-				                    </figcaption>
-				                </figure>
-				                <!-- Blog Post Thumbnail End -->
-				                <div class="blog_text webkit">
-				                    <div class="calendar-date">
-				                        <span>Aug</span>
-				                        <time datetime="2014-12-01">22</time>
-				                    </div>
-				                    <div class="text">
-				                        <h2 class="heading-color cs-post-title"> 
-				                                	<a href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/" class="colrhvr">
-													Education Standard in Europe                                    </a>
-				                                </h2>
-				                        <ul class="post-options">
-				                            <li>
-				                                <i class="fa fa-user"></i>
-				                                <a href="http://chimpgroup.com/wp-demo/statfort/author/statfort-admin/">Statfort</a> </li>
-
-				                            <li class="featured">Featured</li>
-				                            <li>
-				                                <i class="fa fa-list"></i><a href="http://chimpgroup.com/wp-demo/statfort/category/nature/" rel="tag">Nature</a>
-				                            </li>
-				                            <li><i class="fa fa-comment-o"></i><a href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/#comments">4 Comments</a> </li>
-				                        </ul>
-				                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, velit id luctus scelerisque, justo nulla dignissim nulla, vel semper lorem ligula vehicula felis. Donec posuere scelerisque elit, eget blandit tortor scelerisque non. Aliquam et lacus... <a href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/" class="cs-read-more colr">read more</a>
-				                        </p>
-				                    </div>
-				                </div>
-				            </article>
-				            <!-- Blog Post End -->
-				            <!-- Blog Post Start -->
-				            <article class="cls-post-image post-6036 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-nature category-statfort tag-interface tag-ipeople tag-minimal tag-ministry-of-education">
-				                <figure>
-				                    <a href="http://chimpgroup.com/wp-demo/statfort/local-education-authority-results/"><img src="http://chimpgroup.com/wp-demo/statfort/wp-content/uploads/2014/01/05-stat-fort-uni-980x408.jpg" alt="" data-pagespeed-url-hash="3140269363" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-				                    </a>
-				                    <figcaption>
-				                        <a class="btnreadmore bgcolr" href=""> <em class="fa fa-long-arrow-right"></em>
-				                        </a>
-				                    </figcaption>
-				                </figure>
-				                <!-- Blog Post Thumbnail End -->
-				                <div class="blog_text webkit">
-				                    <div class="calendar-date">
-				                        <span>Oct</span>
-				                        <time datetime="2014-12-01">08</time>
-				                    </div>
-				                    <div class="text">
-				                        <h2 class="heading-color cs-post-title"> 
-				                                	<a href="http://chimpgroup.com/wp-demo/statfort/local-education-authority-results/" class="colrhvr">
-													Local education authority results                                    </a>
-				                                </h2>
-				                        <ul class="post-options">
-				                            <li>
-				                                <i class="fa fa-user"></i>
-				                                <a href="http://chimpgroup.com/wp-demo/statfort/author/ricky/">Ricky Price</a> </li>
-				                            <li>
-				                                <i class="fa fa-list"></i><a href="http://chimpgroup.com/wp-demo/statfort/category/blog/" rel="tag">Blog</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/nature/" rel="tag">Nature</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/statfort/" rel="tag">Statfort</a>
-				                            </li>
-				                            <li><i class="fa fa-comment-o"></i><a href="http://chimpgroup.com/wp-demo/statfort/local-education-authority-results/#respond">0 Comment</a> </li>
-				                        </ul>
-				                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, velit id luctus scelerisque, justo nulla dignissim nulla, vel semper lorem ligula vehicula felis. Donec posuere scelerisque elit, eget blandit tortor scelerisque non. Aliquam et lacus... <a href="http://chimpgroup.com/wp-demo/statfort/local-education-authority-results/" class="cs-read-more colr">read more</a>
-				                        </p>
-				                    </div>
-				                </div>
-				            </article>
-				            <!-- Blog Post End -->
-				            <!-- Blog Post Start -->
-				            <article class="cls-post-slider post-6037 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-science tag-interface tag-ipeople tag-minimal tag-ministry-of-education">
-				                <figure>
-				                    <!-- Flex Slider -->
+<!-- Container Start -->
+    <div class="container">
+        <!-- Row Start -->
+        <div class="row">
+        <div class="col-md-9 ">
+		    <div class="rich_editor_text"></div>
+		    <div class="element_size_100">
 
-				                    <div id="flexslider2">
+<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+	<div class="blog blog_detail">
+        <article class="cls-post-image ">
+            <figure class="detail_figure">
+            	<?php the_post_thumbnail( 'post-thumbnails', array( 'class' => 'img-responsive' ) ); ?>
+            </figure>                                                             
+            <ul class="post-options">
+                                	
+                <li><i class="fa fa-calendar"></i><time><?php the_time('F j, Y') ?></time></li>
+                <li><i class="fa fa-user"></i><a href="<?php the_permalink(); ?>"><?php the_author(); ?></a></li>
+                
+				<li><i class="fa fa-align-justify"></i>
+					<?php
+						echo get_the_tag_list('<a>','</a> <a> ','</a>');
+					?>
+				</li>                                    
+                <li><i class="fa fa-comment-o"></i><a href="<?php the_permalink(); ?>"><?php comments_popup_link('No Comment', '% Comment', 'bestblog'); ?></a>   
+                </li>
+            </ul>
+            <div class="detail_text rich_editor_text">
+            	<?php the_content(); ?>
 
-				                        <div class="flexslider">
+            </div>
+        </article>
+        <!-- Post tags Section -->
+        <div class="post-tags">
+            <ul>
+                <li><i class="fa fa-tags"></i>
+                <?php
+					echo get_the_tag_list('<a>','</a> <a> ','</a>');
+							?>
+				</li>      
+            </ul>
+        </div>
+                          
+        <div id="comments">
+			<header class="cs-heading-title">
+				<h2 class="cs-section-title">4 Comments</h2>
+			</header>
+	         <ul>
+                    
+	<li class="comment even thread-even depth-1" id="li-comment-155">
 
-				                            <ul class="slides">
+ 		<div class="thumblist" id="comment-155">
 
+        	<ul>
 
-				                                <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;">
+                <li>
 
-				                                    <figure>
+                    <figure>
 
-				                                        <img src="" alt="" data-pagespeed-url-hash="3424150511" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        <a href="#"><img alt="" src="http://0.gravatar.com/avatar/0b64e37a0cea43f132a4506216287a33?s=50&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/0b64e37a0cea43f132a4506216287a33?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" data-pagespeed-url-hash="2850427502" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
 
+                    </figure>
 
+                     <div class="text">
 
-				                                        <figcaption>
-				                                            <div class="container">
-				                                                <h2 class="colr">
-															Teach Truth , Love Well											</h2>
-				                                                <p>
+                      <header>
 
-				                                                    Phasellus consectetur, nisi at congue mattis, enim libero tempor nisl, et posuere neque lit Nam placerat sapien est, ac aliquam tortor ullamcorper sed. Etiam vel euis
-				                                                </p>
-				                                            </div>
+                            <h5>Fiona lara</h5>
+                            <time>September 24, 2013 - 12:42 pm</time>
+							
+                            <a rel="nofollow" class="comment-reply-link" href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/?replytocom=155#respond" onclick="return addComment.moveForm( &quot;comment-155&quot;, &quot;155&quot;, &quot;respond&quot;, &quot;2788&quot; )" aria-label="Reply to Fiona lara">reply</a>
+                            
+                      </header>
 
-				                                        </figcaption>
+                      <p>Nam viverra odio nec arcu vehicula in facilisis felis iaculis. Aliquam ornare, libero sit amet malesuada rhoncus, nibh risus aliquam enim, eu accumsan mauris nulla et velit. Sed sit amet feugiat diam ibero sit amet malesuada rhoncus, nibh risus aliquam enim, eu accumsan mauris nulla et velit. Sed sit amet feugiat diam.</p>
 
+                    </div>
 
-				                                    </figure>
+                </li>
 
+            </ul>
 
+        </div>
 
-				                                </li>
+     </li>
 
+	<ul class="children">
 
-				                                <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;">
+	<li class="comment odd alt depth-2" id="li-comment-156">
 
-				                                    <figure>
+ 		<div class="thumblist" id="comment-156">
 
-				                                        <img src="" alt="" data-pagespeed-url-hash="3424150511" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        	<ul>
 
+                <li>
 
+                    <figure>
 
-				                                        <figcaption>
-				                                            <div class="container">
-				                                                <h2 class="colr">
-															<a href="#" target="_self">Teach Truth , Love Well</a>											</h2>
-				                                                <p>
+                        <a href="#"><img alt="" src="http://2.gravatar.com/avatar/52f743ca980df8104df02359cfe9c9e0?s=50&amp;d=mm&amp;r=g" srcset="http://2.gravatar.com/avatar/52f743ca980df8104df02359cfe9c9e0?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" data-pagespeed-url-hash="1241961387" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
 
-				                                                    Phasellus consectetur, nisi at congue mattis, enim libero tempor nisl, et posuere neque lit Nam placerat sapien est, ac aliquam tortor ullamcorper sed. Etiam vel euis...
-				                                                </p>
-				                                            </div>
+                    </figure>
 
-				                                        </figcaption>
+                     <div class="text">
 
+                      <header>
 
-				                                    </figure>
+                            <h5>David Arora</h5>
+                            <time>September 24, 2013 - 12:43 pm</time>
+							
+                            <a rel="nofollow" class="comment-reply-link" href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/?replytocom=156#respond" onclick="return addComment.moveForm( &quot;comment-156&quot;, &quot;156&quot;, &quot;respond&quot;, &quot;2788&quot; )" aria-label="Reply to David Arora">reply</a>
+                            
+                      </header>
 
+                      <p>Nam viverra odio nec arcu vehicula in facilisis felis iaculis. Aliquam ornare, libero sit amet malesuada rhoncus, nibh risus aliquam enim, eu accumsan mauris nulla et velit. Sed sit amet feugiat diam ibero sit amet malesuada rhoncus,</p>
 
+                    </div>
 
-				                                </li>
+                </li>
 
+            </ul>
 
-				                                <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;">
+        </div>
 
-				                                    <figure>
+     </li>
 
-				                                        <img src="" alt="" data-pagespeed-url-hash="3424150511" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+	<ul class="children">
 
+	<li class="comment even depth-3" id="li-comment-158">
 
+ 		<div class="thumblist" id="comment-158">
 
-				                                        <figcaption>
-				                                            <div class="container">
-				                                                <h2 class="colr">
-															Teach Truth , Love Well											</h2>
-				                                                <p>
+        	<ul>
 
-				                                                    Phasellus consectetur, nisi at congue mattis, enim libero tempor nisl, et posuere neque lit Nam placerat sapien .
-				                                                </p>
-				                                            </div>
+                <li>
 
-				                                        </figcaption>
+                    <figure>
 
+                        <a href="#"><img alt="" src="http://0.gravatar.com/avatar/cc9c72aefba075027f4a1d5321da59af?s=50&amp;d=mm&amp;r=g" srcset="http://0.gravatar.com/avatar/cc9c72aefba075027f4a1d5321da59af?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" data-pagespeed-url-hash="3113035245" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
 
-				                                    </figure>
+                    </figure>
 
+                     <div class="text">
 
+                      <header>
 
-				                                </li>
+                            <h5>Alax Price</h5>
+                            <time>September 24, 2013 - 12:45 pm</time>
+							
+                            <a rel="nofollow" class="comment-reply-link" href="http://chimpgroup.com/wp-demo/statfort/education-standard-in-europe/?replytocom=158#respond" onclick="return addComment.moveForm( &quot;comment-158&quot;, &quot;158&quot;, &quot;respond&quot;, &quot;2788&quot; )" aria-label="Reply to Alax Price">reply</a>
+                            
+                      </header>
 
+                      <p>Nam viverra odio nec arcu vehicula in facilisis felis idculis. Aliquam ornare, libero sit amet malesuada rhoncus, nibh risus aliquam enim, eu accumsan mauris nulla et velit. Sed sit amet feugiat diam ibero sit amet malesuada rhoncus, nibh risus aliquam enim, eu accumsan mauris nulla et velit. Sed sit amet feugiat diam.</p>
 
-				                                <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; display: none;">
+                    </div>
 
-				                                    <figure>
+                </li>
 
-				                                        <img src="" alt="" data-pagespeed-url-hash="3424150511" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </ul>
 
+        </div>
 
-				                                    </figure>
+     </li>
 
+	<!-- #comment-## -->
+</ul><!-- .children -->
+<!-- #comment-## -->
+</ul><!-- .children -->
 
 
-				                                </li>
+	<!-- #comment-## -->
+                </ul>
+				                
+							</div>
+			
+ 							<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/wp-demo/statfort/education-standard-in-europe/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://chimpgroup.com/wp-demo/statfort/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment fullwidth"><label for="comment">Comment: <span>(required)</span></label><textarea id="comment" name="comment" class="commenttextarea" rows="4" cols="39"></textarea></p><!-- #form-section-comment .form-section --><p class="comment-notes">
+                            </p>
+<p class="comment-form-author"><label for="author">Name<span>(required)</span></label><input id="author" name="author" class="nameinput" type="text" value="" size="30" tabindex="1"></p><!-- #form-section-author .form-section -->
+<p class="comment-form-email"><label for="email">Email<span>(required)</span></label><input id="email" name="email" class="emailinput" type="text" value="" size="30" tabindex="2"></p><!-- #form-section-email .form-section -->
+<p class="comment-form-website"><label for="url">Website<span></span></label><input id="url" name="url" type="text" class="websiteinput" value="" size="30" tabindex="3"></p><!-- #<span class="hiddenSpellError" pre="">form-section-url</span> .form-section -->
+<p class="form-submit"><input name="submit" type="submit" id="submit-comment" class="submit" value="Submit"> <input type="hidden" name="comment_post_ID" value="2788" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>				</form>
+					</div><!-- #respond -->
+						
+                      <!-- Blog Post End -->
+                     </div>
 
 
-				                            </ul>
+<?php endwhile; ?>
+<?php else : ?>
+	  <h3><?php _e('404 Error&#58; Not Found', 'smoothwriter'); ?></h3>
+<?php endif; ?>
 
-				                            <ol class="flex-control-nav flex-control-paging">
-				                                <li><a class="flex-active">1</a>
-				                                </li>
-				                                <li><a class="">2</a>
-				                                </li>
-				                                <li><a class="">3</a>
-				                                </li>
-				                                <li><a class="">4</a>
-				                                </li>
-				                            </ol>
-				                            <ul class="flex-direction-nav">
-				                                <li><a class="flex-prev cs-bgcolrhvr" href="#"><em class="fa fa-long-arrow-up"></em></a>
-				                                </li>
-				                                <li><a class="flex-next cs-bgcolrhvr" href="#"><em class="fa fa-long-arrow-down"></em></a>
-				                                </li>
-				                            </ul>
-				                        </div>
 
-				                    </div>
 
-
-				                    <!-- Slider height and width -->
-
-				                    <!-- Flex Slider Javascript Files -->
-
-				                    <script type="text/javascript">
-				                        jQuery(window).load(function() {
-				                            var speed = 7000;
-				                            var slidespeed = 600;
-				                            jQuery('#flexslider2 .flexslider').flexslider({
-				                                animation: "fade",
-				                                slideshow: true,
-				                                slideshowSpeed: speed,
-				                                animationSpeed: slidespeed,
-				                                prevText: "<em class='fa fa-long-arrow-up'></em>",
-				                                nextText: "<em class='fa fa-long-arrow-down'></em>",
-				                                start: function(slider) {
-				                                    jQuery('.flexslider').fadeIn();
-				                                }
-				                            });
-				                        });
-				                    </script>
-
-				                </figure>
-				                <!-- Blog Post Thumbnail End -->
-				                <div class="blog_text webkit">
-				                    <div class="calendar-date">
-				                        <span>Oct</span>
-				                        <time datetime="2014-12-01">08</time>
-				                    </div>
-				                    <div class="text">
-				                        <h2 class="heading-color cs-post-title"> 
-				                                	<a href="http://chimpgroup.com/wp-demo/statfort/future-of-englands-top-schools/" class="colrhvr">
-													Future of England’s top schools.                                    </a>
-				                                </h2>
-				                        <ul class="post-options">
-				                            <li>
-				                                <i class="fa fa-user"></i>
-				                                <a href="http://chimpgroup.com/wp-demo/statfort/author/statfort-admin/">Statfort</a> </li>
-				                            <li>
-				                                <i class="fa fa-list"></i><a href="http://chimpgroup.com/wp-demo/statfort/category/blog/" rel="tag">Blog</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/science/" rel="tag">Science</a> </li>
-				                        </ul>
-				                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, velit id luctus scelerisque, justo nulla dignissim nulla, vel semper lorem ligula vehicula felis. Donec posuere scelerisque elit, eget blandit tortor scelerisque non. Aliquam et lacus... <a href="http://chimpgroup.com/wp-demo/statfort/future-of-englands-top-schools/" class="cs-read-more colr">read more</a>
-				                        </p>
-				                    </div>
-				                </div>
-				            </article>
-				            <!-- Blog Post End -->
-				            <!-- Blog Post Start -->
-				            <article class="cls-post-image post-6038 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-science category-statfort tag-grunge tag-interface tag-iphone tag-ngo-life">
-				                <figure>
-				                    <a href="http://chimpgroup.com/wp-demo/statfort/drug-taking-teachers-can-return-to-class/"><img src="http://chimpgroup.com/wp-demo/statfort/wp-content/uploads/2014/01/03-stat-fort-uni-980x408.jpg" alt="" data-pagespeed-url-hash="3422594913" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-				                    </a>
-				                    <figcaption>
-				                        <a class="btnreadmore bgcolr" href=""> <em class="fa fa-long-arrow-right"></em>
-				                        </a>
-				                    </figcaption>
-				                </figure>
-				                <!-- Blog Post Thumbnail End -->
-				                <div class="blog_text webkit">
-				                    <div class="calendar-date">
-				                        <span>Oct</span>
-				                        <time datetime="2014-12-01">08</time>
-				                    </div>
-				                    <div class="text">
-				                        <h2 class="heading-color cs-post-title"> 
-				                                	<a href="http://chimpgroup.com/wp-demo/statfort/drug-taking-teachers-can-return-to-class/" class="colrhvr">
-													Drug taking teachers can return to class                                    </a>
-				                                </h2>
-				                        <ul class="post-options">
-				                            <li>
-				                                <i class="fa fa-user"></i>
-				                                <a href="http://chimpgroup.com/wp-demo/statfort/author/statfort-admin/">Statfort</a> </li>
-				                            <li>
-				                                <i class="fa fa-list"></i><a href="http://chimpgroup.com/wp-demo/statfort/category/blog/" rel="tag">Blog</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/science/" rel="tag">Science</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/statfort/" rel="tag">Statfort</a> </li>
-				                        </ul>
-				                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, velit id luctus scelerisque, justo nulla dignissim nulla, vel semper lorem ligula vehicula felis. Donec posuere scelerisque elit, eget blandit tortor scelerisque non. Aliquam et lacus... <a href="http://chimpgroup.com/wp-demo/statfort/drug-taking-teachers-can-return-to-class/" class="cs-read-more colr">read more</a>
-				                        </p>
-				                    </div>
-				                </div>
-				            </article>
-				            <!-- Blog Post End -->
-				            <!-- Blog Post Start -->
-				            <article class="cls-post-image post-6039 post type-post status-publish format-standard has-post-thumbnail hentry category-blog category-nature category-our-story tag-interface tag-iphone tag-minimal tag-typography">
-				                <figure>
-				                    <a href="http://chimpgroup.com/wp-demo/statfort/as-term-begins-schools-plan-for-the-holidays/"><img src="http://chimpgroup.com/wp-demo/statfort/wp-content/uploads/2014/01/02-stat-fort-uni-980x408.jpg" alt="" data-pagespeed-url-hash="1416274040" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
-				                    </a>
-				                    <figcaption>
-				                        <a class="btnreadmore bgcolr" href=""> <em class="fa fa-long-arrow-right"></em>
-				                        </a>
-				                    </figcaption>
-				                </figure>
-				                <!-- Blog Post Thumbnail End -->
-				                <div class="blog_text webkit">
-				                    <div class="calendar-date">
-				                        <span>Oct</span>
-				                        <time datetime="2014-12-01">08</time>
-				                    </div>
-				                    <div class="text">
-				                        <h2 class="heading-color cs-post-title"> 
-				                                	<a href="http://chimpgroup.com/wp-demo/statfort/as-term-begins-schools-plan-for-the-holidays/" class="colrhvr">
-													As term begins, schools plan for the holidays                                    </a>
-				                                </h2>
-				                        <ul class="post-options">
-				                            <li>
-				                                <i class="fa fa-user"></i>
-				                                <a href="http://chimpgroup.com/wp-demo/statfort/author/statfort-admin/">Statfort</a> </li>
-				                            <li>
-				                                <i class="fa fa-list"></i><a href="http://chimpgroup.com/wp-demo/statfort/category/blog/" rel="tag">Blog</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/nature/" rel="tag">Nature</a>, <a href="http://chimpgroup.com/wp-demo/statfort/category/our-story/" rel="tag">Our Story</a> </li>
-				                        </ul>
-				                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras molestie, velit id luctus scelerisque, justo nulla dignissim nulla, vel semper lorem ligula vehicula felis. Donec posuere scelerisque elit, eget blandit tortor scelerisque non. Aliquam et lacus... <a href="http://chimpgroup.com/wp-demo/statfort/as-term-begins-schools-plan-for-the-holidays/" class="cs-read-more colr">read more</a>
-				                        </p>
-				                    </div>
-				                </div>
-				            </article>
-				            <!-- Blog Post End -->
-				            <!-- Blog End -->
-				        </div>
-				        <nav class="pagination">
-				            <ul>
-				                <li><a class="active">1</a>
-				                </li>
-				                <li><a href="?page_id_all=2">2</a>
-				                </li>
-				                <li><a href="?page_id_all=3">3</a>
-				                </li>
-				                <li><a href="?page_id_all=4">4</a>
-				                </li>
-				                <li><a href="?page_id_all=5">5</a>
-				                </li>
-				                <li> <a>. . .</a> </li>
-				                <li><a href="?page_id_all=8">8</a>
-				                </li>
-				                <li class="next"><a class="fa fa-angle-right icon" href="?page_id_all=2">Next »</a>
-				                </li>
-				            </ul>
-				        </nav>
 				    </div>
 				</div>
 

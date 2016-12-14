@@ -15,18 +15,22 @@
 						<div class="rich_editor_text"></div>      
 						<div class="element_size_100">
 						
-							<header class="cs-heading-title">
-								<h2 class="cs-section-title float-left">All Recent News</h2>
-							</header>
+							
 							
 							<div class="postlist blog blog-large lightbox">
 							<!-- Blog Start -->
-							
+
+
+							<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+
 								 <!-- Blog Post Start -->
-								<article class="cls-post-image">
+								<article class="cls-post-image <?php post_class(); ?>" id="<?php the_ID(); ?>">
 								 
 									<figure>
-										<a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/blog1.jpg" alt=""></a>
+										<a href="<?php the_permalink(); ?>">
+										<?php 
+											the_post_thumbnail( 'post-thumbnails', array( 'class' => 'img-responsive' ) ); 
+										?>
 									  
 										<figcaption>
 											 <a class="btnreadmore bgcolr" href="">  <em class="fa fa-long-arrow-right"></em>
@@ -39,137 +43,51 @@
 									<div class="blog_text webkit">
 									
 										<div class="calendar-date">
-											 <span>May </span>
-											 <time datetime="2014-12-01">05 </time>
+											 <span><?php the_time('M') ?> </span>
+											 <time datetime="2014-12-01"><?php the_time('j') ?> </time>
 										</div>
 										 
 										<div class="text">
 										
 											<h2 class="heading-color cs-post-title"> 
-												 <a href="" class="colrhvr">School leavers must lower _____ work expectations.</a>
+												 <a href="<?php the_permalink(); ?>" class="colrhvr"><?php the_title(); ?></a>
 											</h2>
 											<ul class="post-options">
 												<li>
-													<i class="fa fa-user"></i><a href="#">Statfort </a>                
+													<i class="fa fa-user"></i><a href="<?php the_permalink(); ?>"><?php the_author(); ?> </a>                
 												</li>
 												<li>
 													<i class="fa fa-list"></i>
-													<a href="#" rel="tag">Blog </a>,  
+
+												<?php
+												echo get_the_tag_list('<a>','</a> <a> ','</a>');
+												?>
+													<!-- <a href="#" rel="tag">Blog </a>,  
 													<a href="#" rel="tag">Nature </a>,  
-													<a href="#" rel="tag">Statfort </a>                           		
+													<a href="#" rel="tag">Statfort </a> -->                           		
 												</li>		  
 											</ul>
-											<p>Lorem ipsum dolor sit ____, consectetur adipiscing elit. Cras ________, velit id luctus scelerisque, _____ nulla dignissim nulla, vel ______ lorem ligula vehicula felis. _____ posuere scelerisque elit, eget _______ tortor scelerisque non. Aliquam __ lacus...  <a href="" class="cs-read-more colr">read more </a></p>
+											<p><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="cs-read-more colr">read more </a></p>
 									   </div>
 									   
 									</div>
 									
 								</article>
 								<!-- Blog Post End -->
+								<?php endwhile; ?>
+								 
+									<?php else : ?>
+									<h3><?php _e('404 Error&#58; Not Found', 'bestblog'); ?></h3>
+								<?php endif; ?>	
 							
-								<!-- Blog Post Start -->
-								<article class="cls-post-video">
 								
-									<figure>
-										<iframe width="500" height="281" src="https://www.youtube.com/embed/YE7VzlLtp-4?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
-									</figure>                         
-									<!-- Blog Post Thumbnail End -->
-									
-									<div class="blog_text webkit">
-									
-										<div class="calendar-date">
-											 <span>May </span>
-											 <time datetime="2014-12-01">05 </time>
-										</div>
-										 
-										<div class="text">
-										
-											<h2 class="heading-color cs-post-title"> 
-												 <a href="" class="colrhvr">School leavers must lower _____ work expectations.</a>
-											</h2>
-											<ul class="post-options">
-												<li>
-													<i class="fa fa-user"></i><a href="#">Statfort </a>                
-												</li>
-												<li>
-													<i class="fa fa-list"></i>
-													<a href="#" rel="tag">Blog </a>,  
-													<a href="#" rel="tag">Nature </a>,  
-													<a href="#" rel="tag">Statfort </a>                           		
-												</li>		  
-											</ul>
-											<p>Lorem ipsum dolor sit ____, consectetur adipiscing elit. Cras ________, velit id luctus scelerisque, _____ nulla dignissim nulla, vel ______ lorem ligula vehicula felis. _____ posuere scelerisque elit, eget _______ tortor scelerisque non. Aliquam __ lacus...  <a href="" class="cs-read-more colr">read more </a></p>
-									   </div>
-									   
-									</div>
-									
-								</article>
-								
-								<!-- Blog Post End -->
-								
-								<!-- Blog Post Start -->
-								<article class="cls-post-image">
-								 
-									<figure>
-										<a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/blog1.jpg" alt=""></a>
-									  
-										<figcaption>
-											 <a class="btnreadmore bgcolr" href="">  <em class="fa fa-long-arrow-right"></em>
-											 </a>
-										</figcaption>
-													 
-									</figure>
-
-									<!-- Blog Post Thumbnail End -->
-									<div class="blog_text webkit">
-									
-										<div class="calendar-date">
-											 <span>May </span>
-											 <time datetime="2014-12-01">05 </time>
-										</div>
-										 
-										<div class="text">
-										
-											<h2 class="heading-color cs-post-title"> 
-												 <a href="" class="colrhvr">School leavers must lower _____ work expectations.</a>
-											</h2>
-											<ul class="post-options">
-												<li>
-													<i class="fa fa-user"></i><a href="#">Statfort </a>                
-												</li>
-												<li>
-													<i class="fa fa-list"></i>
-													<a href="#" rel="tag">Blog </a>,  
-													<a href="#" rel="tag">Nature </a>,  
-													<a href="#" rel="tag">Statfort </a>                           		
-												</li>		  
-											</ul>
-											<p>Lorem ipsum dolor sit ____, consectetur adipiscing elit. Cras ________, velit id luctus scelerisque, _____ nulla dignissim nulla, vel ______ lorem ligula vehicula felis. _____ posuere scelerisque elit, eget _______ tortor scelerisque non. Aliquam __ lacus...  <a href="" class="cs-read-more colr">read more </a></p>
-									   </div>
-									   
-									</div>
-									
-								</article>
 								<!-- Blog Post End -->
 																   
 							</div>
-					 
-					 
-							<nav class="pagination">
-								<ul>
-									<li class="prev"><a class="fa fa-angle-left fa-2" href="?page_id_all=3">« Previous </a></li>
-									<li><a href="?page_id_all=1">1 </a></li>
-									<li><a href="?page_id_all=2">2 </a></li>
-									<li><a href="?page_id_all=3">3 </a></li>
-									<li><a class="active">4 </a></li>
-									<li><a href="?page_id_all=5">5 </a></li>
-									<li><a href="?page_id_all=6">6 </a></li>
-									<li>  <a>. . . </a>  </li>
-									<li><a href="?page_id_all=8">8 </a>
-									</li>
-									<li class="next"><a class="fa fa-angle-right icon" href="?page_id_all=5">Next » </a></li>
-								</ul>
-							</nav>	
+
+							<!-- Pagination -->
+								<?php smoothwiter_pagination(); ?>
+							<!-- End Pagination -->
 							
 						</div>                 
 					</div>
@@ -190,45 +108,7 @@
 							</ul>
 						</div>
 
-						<div class="widget widget-latest-event fullwidth">
-							<header class="cs-heading-title">
-								<h2 class="cs-section-title">Upcoming Events</h2>
-							</header>
-											 <!-- Events Widget Start -->
-											
-							<article>
-								<div class="text">
-									<h6>
-										<a href="" class="colrhvr">Empowering Women through Meaningful Wor...</a>
-									</h6>
-									<time datetime="2011-01-12">September 23, 2015</time>
-								</div>
-								<div class="post-options">
-									<ul>
-										<li><em class="fa fa-clock-o"></em>05:00-05:30</li>
-										<li><em class="fa fa-map-marker"></em>Harlow, Essex , funford.</li>
-									</ul>
-								</div>
-							</article>
-							<!-- Events Widget End -->		
-							<!-- Events Widget Start -->
-											
-							<article>
-								<div class="text">
-									<h6>
-										<a href="" class="colrhvr">Investing in Decent Work for Women</a>
-									</h6>
-									<time datetime="2011-01-12">September 29, 2015</time>
-								</div>
-								<div class="post-options">
-									<ul>
-										<li><em class="fa fa-clock-o"></em>05:00-05:30</li>
-										<li><em class="fa fa-map-marker"></em>Startford London, UK.</li>
-									</ul>
-								</div>
-							</article>
-							<!-- Events Widget End -->		
-						</div>
+						
 						
 						<div class="widget facebok_widget">
 							
@@ -238,24 +118,6 @@
 							
 							<style type="text/css" >
 
-								.facebookOuter {
-									background-color:#F5F2F2; 
-									width:100%; 
-									padding:0;
-									float:left;
-								}
-								.facebookInner {
-									float: left;
-									width: 100%;
-								}
-								.facebook_module, .fb_iframe_widget > span, .fb_iframe_widget > span > iframe {
-								 width: 100% !important;
-								}
-
-								.fb_iframe_widget, .fb-like-box div span iframe {
-								 width: 100% !important;
-								 float: left;
-								}
 
 							</style>
 
@@ -268,13 +130,7 @@
 								</div>
 							</div>
 
-							<script>(function(d, s, id) {
-							  var js, fjs = d.getElementsByTagName(s)[0];
-							  if (d.getElementById(id)) return;
-							  js = d.createElement(s); js.id = id;
-							  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-							  fjs.parentNode.insertBefore(js, fjs);
-							 }(document, 'script', 'facebook-jssdk'));
+							<script>
 							</script>
 
 						</div>

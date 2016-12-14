@@ -100,14 +100,17 @@
 			</div>	
 		</header>	
 		<!-- Header Close --> 
-		<div class="breadcrumb">
-			<div class="container">
-				<div class="breadcrumb-inner">
-					<div class="subtitle">
-						<h1 class="cs-page-title">Content Writer</h1>
-					</div>                          
+		<?php if (! is_front_page() ) : ?>
+	        <div class="breadcrumb">
+				<div class="container">
+					<div class="breadcrumb-inner">
+						<div class="subtitle">
+							<h1 class="cs-page-title">Smoothweriter</h1>
+						</div>                          
+					</div>
 				</div>
 			</div>
-		</div>
 
+        <?php endif; ?>
+		
 		<div class="clear"></div>
