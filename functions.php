@@ -180,3 +180,4 @@ require_once get_template_directory() .'/inc/custom-post-type.php';
 require_once get_template_directory() .'/inc/shortcodes/fontpage.php';
 require_once get_template_directory() .'/inc/pagination.php';
 require_once get_template_directory() .'/inc/breadcrumb.php';
+require_once get_template_directory() .'/inc/ps-extend-vc.php';

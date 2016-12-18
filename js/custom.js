@@ -39,6 +39,9 @@ jQuery(window).load(function(){
   fjs.parentNode.insertBefore(js, fjs);
  }(document, 'script', 'facebook-jssdk'));
 
+//priceing tab
+jQuery("ul.list-unstyled .row li:first-child").addClass("active");
+jQuery(".tab-content > div:first-child").addClass("active");
 
 });
 
