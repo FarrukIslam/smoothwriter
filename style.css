@@ -842,3 +842,6 @@ ol.breadcrumb li {
     font-size: 15px;
     margin-right: -35px;
 }
+ul.flex-direction-nav {
+    display: none;
+}

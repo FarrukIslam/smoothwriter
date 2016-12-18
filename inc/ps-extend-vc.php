@@ -69,6 +69,35 @@ vc_map( array(
 /* teammember section  */
 
 vc_map( array(
+  "name" => __("Smoothwriter Services Section", 'smoothwriter'),
+  "base" => "sw_service",
+  "icon" => "sw_service_icon",
+  "category" =>array('By smoothwriter', 'Content'),
+  "description" => __('smoothwriter Service Section', 'smoothwriter'),
+  "params" => array(
+  		
+  		array(
+		  "type" => "textfield",
+		  "heading" => __("show title", 'smoothwriter'),
+		  "param_name" => "title",
+		  "admin_label" => true,
+		  "value" => __("title is here", 'smoothwriter')
+		),
+  		array(
+		  "type" => "textfield",
+		  "heading" => __("Icon ", 'smoothwriter'),
+		  "param_name" => "icon",
+		  "admin_label" => true,
+		  "value" => __("fa-heart-o", 'smoothwriter')
+		),
+	
+  )
+) );
+
+					
+/* teammember section  */
+
+vc_map( array(
   "name" => __("Smoothwriter Pricing Section", 'smoothwriter'),
   "base" => "sm_price_tab",
   "icon" => "sm_price_tab_icon",
