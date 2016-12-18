@@ -5,19 +5,14 @@
 			<div class="col-md-12">
 				<div class="element_size_100">
 					<div class="course-detail">
-					<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
-					 <article>
-						<figure class="detail_figure">
-							<?php the_post_thumbnail( 'post-thumbnails', array( 'class' => 'img-responsive' ) ); ?>
-						</figure>
-						<?php the_content(); ?>
-						<div class="clear"></div>
-									
-					 </article>
-					 <?php endwhile; ?>
-						<?php else : ?>
-							  <h3><?php _e('404 Error&#58; Not Found', 'smoothwriter'); ?></h3>
-						<?php endif; ?>
+					 <?php if(have_posts()) : ?>
+ 
+			        <?php while(have_posts())  : the_post(); ?> 
+			        
+			        <?php the_content(); ?> <?php endwhile; ?> 
+			        
+			       <?php endif; ?> 
+						
 
 					</div>
 				</div>

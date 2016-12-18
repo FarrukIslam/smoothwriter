@@ -17,7 +17,7 @@ vc_map( array(
 		  "heading" => __("Slider Per page", 'smoothwriter'),
 		  "param_name" => "numberpost",
 		  "admin_label" => true,
-		  "value" => __("-1", 'smoothwriter')
+		  "value" => __("", 'smoothwriter')
 		),
 	
   )
