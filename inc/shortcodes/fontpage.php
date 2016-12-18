@@ -249,7 +249,7 @@ function sw_portfolio_shortcode_func($atts,$post_ID) {
 	            	 </li>                                   	
 	            </ul>-->
 		<?php 
-			$portfolio_terms = get_terms( 'portfolio_cat' );
+		/*	$portfolio_terms = get_terms( 'portfolio_cat' );
 
 			if ( ! empty( $portfolio_terms ) && ! is_wp_error( $portfolio_terms ) ){
 			 echo '<ul class="post-categories">';
@@ -258,7 +258,7 @@ function sw_portfolio_shortcode_func($atts,$post_ID) {
 
 			 }
 			 echo '</ul>';
-			}
+			}*/
 		?>
 					         
 		            <h2 class="cs-post-title">
