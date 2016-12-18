@@ -56,6 +56,13 @@ vc_map( array(
   		
   		array(
 		  "type" => "textfield",
+		  "heading" => __("Show Blog section title", 'smoothwriter'),
+		  "param_name" => "section_title",
+		  "admin_label" => true,
+		  "value" => __("Our Blog Post", 'smoothwriter')
+		),
+  		array(
+		  "type" => "textfield",
 		  "heading" => __("Show Blog Post Items", 'smoothwriter'),
 		  "param_name" => "numberpost",
 		  "admin_label" => true,
@@ -95,7 +102,7 @@ vc_map( array(
 ) );
 
 					
-/* teammember section  */
+/* prcing section  */
 
 vc_map( array(
   "name" => __("Smoothwriter Pricing Section", 'smoothwriter'),

@@ -326,6 +326,8 @@ function smoothwriterteammember_shortcode_func($atts,$post_ID) {
 	      
        	  while( $team_member -> have_posts() ) : $team_member -> the_post();
 
+			$meta_data    = get_post_meta( get_the_ID(), 'team_member', true );
+
    		 ?>
       
 
@@ -343,14 +345,25 @@ function smoothwriterteammember_shortcode_func($atts,$post_ID) {
 		                                
 				<div class="text">
 					<h2 class="cs-post-title"><a href="" class="colrhvr"><?php the_title(); ?></a></h2>
-					<h6 class="cat-department">Chemistery Department</h6>
+					<h6 class="cat-department"><?php echo $meta_data['regisnation']; ?></h6>
 					
 					<div class="post-options">
 						<ul>
+
+						<?php 
+						
+						$contact_media =  $meta_data['profile_option'] ;
+
+						foreach( $contact_media as $key => $contact ){
+						 
+						  
+						  ?>
+						
 							<li>
-								<em class="fa fa-envelope-o"></em> 
-								<a href="mailto:contact@envato.com">contact@envato.com</a>
-							</li>                                                                                 
+								<em class="fa <?php echo $contact['icon']; ?>"></em> 
+								<a href="#"><?php echo $contact['title_name']; ?></a>
+							</li> 
+							<?php } ?>                                                                                
 						</ul>
 					</div>
 					
@@ -380,12 +393,20 @@ function sm_blog_shortcode_func($atts,$post_ID) {
 
    extract( shortcode_atts( array(
     'numberpost' => '3',
+    'section_title' => 'Our Blog',
    ), $atts) );
 
  ob_start();
 
 ?>
-<div class="postlist blog blog-medium">
+
+<div class="element_size_100">
+    <header class="cs-heading-title">
+		<h2 class="cs-section-title float-left"><?php echo $section_title; ?></h2>
+	</header>	
+	
+	<div class="postlist blog blog-medium lightbox">
+
 
 
         <?php 
@@ -405,7 +426,7 @@ function sm_blog_shortcode_func($atts,$post_ID) {
 		    $image = wp_get_attachment_image_src($post_thumbnail_id, 'fontpageblog275x185');
 		 ?>
 			 <article class="cls-post-image">
-					
+			 <?php if($image) : ?>					
 	            <figure>
 					<a href="" >
 						<img src="<?php echo $image[0]; ?>" alt="" >
@@ -416,7 +437,8 @@ function sm_blog_shortcode_func($atts,$post_ID) {
 						</a>
 					</figcaption>
 											
-				</figure>                   
+				</figure>  
+				<?php endif; ?>                 
 			
 			<!-- Blog Post Thumbnail End -->
 	            <div class="blog_text webkit">
@@ -448,7 +470,7 @@ function sm_blog_shortcode_func($atts,$post_ID) {
         <?php endwhile; ?>  
 </div>
 
-
+</div>
 
  <?php 
  $html = ob_get_contents();
@@ -480,6 +502,7 @@ function sm_price_tab_shortcode_func($atts,$post_ID) {
   $sm_price = new wp_Query(array(
     'post_type' => 'sm_price_tab',
     'posts_per_page' => $numberpost,
+    'order' => 'ASC'
   ));
 ?> 
 

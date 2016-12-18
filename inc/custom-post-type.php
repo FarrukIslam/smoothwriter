@@ -146,6 +146,7 @@ function smoothwriter_teammember_init() {
 			"rewrite" => true
 			)
 		);
+	remove_post_type_support( 'sm_team_member',  'editor' );
 }
 
 
