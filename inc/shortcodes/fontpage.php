@@ -573,6 +573,11 @@ $meta_data    = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
  <div class="tab-content">
 <?php while( $sm_price -> have_posts() ) : $sm_price -> the_post(); ?>
 
+<?php 
+
+$meta_data    = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
+
+?>
   <div role="tabpanel" class="tab-pane container" id="<?php the_ID(); ?>">
 	  <div class="row">
 

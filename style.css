@@ -940,3 +940,6 @@ span.price {
 .woocommerce div.product form.cart .button {
     display: none;
 }
+.woocommerce-message {
+    display: none;
+}
