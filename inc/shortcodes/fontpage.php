@@ -600,97 +600,9 @@ $meta_data    = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
 	    </div>
 
 	    <div class="col-md-4">
-	    	<form class="paypal" action="<?php echo get_template_directory_uri(); ?>/inc/payment/payments.php" method="post" id="paypal_form" target="_blank">
-				
-				
-
-				<input type="hidden" name="cmd" value="_xclick" />
-				<div id="pricing-table" class="clear">
-				 
-				    <div class="plan" id="most-popular">
-
-				    <?php 
-						$post_meta  = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
-						$pirces =  $post_meta['pricing_option'] ;
-
-						foreach( $pirces as $key => $price ){
-						 $val = $price['price'];
-						}  
-						?>
-
-					<input type="hidden" name="item_amount" value="<?php echo '$'.$val; ?>"  />
-
-	 
-					<input type="hidden" name="item_name" value=" <?php
-			         	//tab icon
-			          if( $meta_data['price_name']) : ?>
-			          	<?php echo $meta_data['price_name']; ?>
-			          	
-				        <?php else : ?>
-				            Blog Post
-				        <?php endif; ?>"  />
-
-
-						<h3>
-						<?php
-				         	//tab icon
-				          if( $meta_data['Pricing_title']) : ?>
-				          	<?php echo $meta_data['Pricing_title']; ?>
-				          	
-				        <?php else : ?>
-				            Professional
-				        <?php endif; ?>
-				        <span>$
-
-
-						<?php 
-						$post_meta  = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
-						$prices =  $post_meta['pricing_option'] ;
-
-						foreach( $prices as $key => $price ){
-						  echo $price['price'];
-						}  
-						?>
-
-
-				        </span>
-
-				    </h3>
-
-	 				<?php echo $meta_data['pricing_content_body']; ?>
-
-				     <div class="select-page">
-						<h5>Select your Page</t5>	
-						<select name="item_number" class="slectpage" id="">
-						<?php 
-						$post_meta  = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
-						$prices =  $post_meta['pricing_option'] ;
-
-						foreach( $prices as $key => $price ){
-						  
-
-						  
-						  
-						  //echo $song['select_price'];
-						  ?>
-						  <option value="<?php echo $price['select_page_id']; ?>"><?php echo $price['select_name']; ?></option>
-						  <?php
-						}  
-						?>
-
-									
-								</select>
-						
-					</div>  
-					<input class="submint-btn signup" type="submit" name="submit" value="Pay With Paypal"/> 
-  
-				    </div>
-
-				</div>
-
-			</form>
-
+	    	<?php echo do_shortcode('[products ids="'.$meta_data['product_id'].'"] '); ?>
 	    </div>
+	    
 	  </div><!-- end row -->
 	</div><!-- end tab pane -->
 <?php endwhile; ?>  

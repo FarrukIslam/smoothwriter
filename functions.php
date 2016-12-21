@@ -119,7 +119,6 @@ if (!class_exists('smoothwriter_scripts_load'))
 
 			
 			
-			
 			/* register nav left*/
 			register_nav_menus(array(
 				'primarymenu' => __('Primary Menu', 'smoothwriter')
@@ -181,3 +180,4 @@ require_once get_template_directory() .'/inc/shortcodes/fontpage.php';
 require_once get_template_directory() .'/inc/pagination.php';
 require_once get_template_directory() .'/inc/breadcrumb.php';
 require_once get_template_directory() .'/inc/ps-extend-vc.php';
+require_once get_template_directory() .'/inc/woocommerce-support.php';

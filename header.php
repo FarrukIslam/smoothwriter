@@ -114,3 +114,4 @@
         <?php endif; ?>
 		
 		<div class="clear"></div>
+   	<div id="main" role="main">		

@@ -710,8 +710,8 @@ header.heading-style-3 h2:after{
 	color: #409f74;
 	background: #fff;
 	border: 5px solid #fff;
-	height: 100px;
-	width: 100px;
+	height: 117px;
+	width: 117px;
 	margin: 10px auto -65px;
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
@@ -797,8 +797,8 @@ header.heading-style-3 h2:after{
 }
 .btn-primary {
     color: #fff;
-    background-color: #df1375 !important;
-    border-color: #df1375 !important;
+    background-color: #409f74 !important;
+    border-color: #409f74 !important;
 }
 select.slectpage {
     height: 35px !important;
@@ -843,5 +843,100 @@ ol.breadcrumb li {
     margin-right: -35px;
 }
 ul.flex-direction-nav {
+    display: none;
+}
+
+.our_staff article .text {
+    padding-top: 0px !important;
+   
+}
+.cs-post-title {
+   
+    margin-bottom: 35px;
+   
+}
+.col-md-12 .blog.blog-medium article figure, .col-md-9 .blog.blog-medium article figure {
+    height: 160px !important;
+    width: 215px;
+}
+/* woocommerce css */
+.col-md-4.prieing_table_item {
+    margin: 20px 0px;
+}
+button.btn-primary.pay-now a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button.btn-primary.pay-now {
+    color: #fff !important;
+    padding: 10px 20px;
+    margin: 45px 0px 0px;
+    border-radius: 4px;
+}
+#pricing-table {
+    text-align: center;
+    position: relative;
+}
+
+td.label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+ table > tbody > tr > td {
+    padding: 8px;
+    line-height: 1.428571429;
+    vertical-align: top;
+    border-top: 0px solid #dddddd;
+    border: 0px solid #dddddd;
+}
+span.qut_select_page{
+	  font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    float: left;
+}
+td.value select {
+    width: 100%;
+}
+a.reset_variations {
+    float: left;
+    font-size: 13px;
+    margin: 10px 0px;
+}
+table.variations {
+    padding-top: 40px;
+    display: block;
+}
+
+
+.woocommerce-variation-price {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    color:#3b9e71;
+}
+.woocommerce-variation-price:before {
+    content: "per page price";
+    position: absolute;
+    left: 27px;
+    top: 75px;
+    font-size: 16px;
+    color:#333;
+}
+span.price {
+	position: absolute;
+    line-height: 0;
+    left: 0px;
+    right: 0px;
+    top: 85px;
+    font-size: 15px;
+}
+.woocommerce div.product form.cart .button {
     display: none;
 }

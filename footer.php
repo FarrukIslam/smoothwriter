@@ -1,4 +1,8 @@
-   
+</div>
+<!-- Content Section End -->
+<div class="clear"></div> 
+
+  
 <!-- Footer Widgets Start -->
 <div id="footer-widgets" class="fullwidth" style=" background: url('<?php echo get_template_directory_uri(); ?>/img/img/footer-bg.jpg') no-repeat scroll center bottom / cover  rgba(0, 0, 0, 0)">
                 <!-- Container Start -->

@@ -52,61 +52,11 @@ $options[]      = array(
         ),
 
         array(
-              'id'    => 'Pricing_title',
-              'type'  => 'text',
-              'title' => 'Write Name',
-              'default' => 'Professional',
-            ),
-        array(
-              'id'    => 'pricing_content_body',
-              'type'  => 'textarea',
-              'title' => 'Set Pricing ul li',
-            ),
-        array(
-              'id'    => 'price_name',
-              'type'  => 'text',
-              'title' => 'Priceing Name ',
-              'desc'    => 'Write title of Price',
-              'default' => 'Blog Post',
-            ),
-
-        
-        array(
-          'id'              => 'pricing_option',
-          'type'            => 'group',
-          'title'           => 'Create Priceing',
-          'button_title'    => 'Add New',
-          'accordion_title' => 'Add New Price Option',
-          'fields'          => array(
-            
-            
-
-            array(
-              'id'    => 'select_page_id',
-              'type'  => 'text',
-              'title' => 'Write your id (without space)',
-              'desc'    => 'Id will be change difference key',
-              'default' => 'select_page_id',
-            ),
-            array(
-              'id'    => 'select_name',
-              'type'  => 'text',
-              'title' => 'Add your Option Name',
-              'desc'    => 'Name will be Page Word',
-              'default' => '300 Words',
-            ),
-            
-            array(
-              'id'    => 'price',
-              'type'  => 'text',
-              'title' => 'Add Your Price',
-              'desc'    => 'Price will $15',
-              'default' => '15',
-            ),
-           
-          ),
+          'id'    => 'product_id',
+          'type'  => 'text',
+          'title' => 'Insert Product Id',
+          'default' => '226, ',
         ),
-
 
 
 

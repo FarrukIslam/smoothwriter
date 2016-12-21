@@ -1,12 +1,7 @@
 <?php get_header(); ?>    
 		
 
-		<div class="clear"></div>
-		<div class="clear"></div>    
-			  
-			  
-			  
-		<div id="main" role="main">
+		
 			<!-- Container Start -->
 			<div class="container">
 				<!-- Row Start -->
@@ -254,9 +249,7 @@
 				</div>
 				<!-- Row End -->
 			</div>
-		</div>
-		<!-- Content Section End -->
-		<div class="clear"></div>
+		
     
 
    <?php get_footer(); ?>
