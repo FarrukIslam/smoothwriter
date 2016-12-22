@@ -241,26 +241,36 @@ function sw_portfolio_shortcode_func($atts,$post_ID) {
 			    <img src="<?php echo $image[0]; ?>" alt=""></a>
 			    </figure>                            
 			    <div class="text fullwidth">
-				<!--<ul class="post-categories">
-	            	<li>
-	                	 <a href="#" rel="tag">Blog</a>, 
-	                	 <a href="#" rel="tag">Nature</a>, 
-	                	 <a href="#" rel="tag">Statfort</a>
+			    <ul class="post-categories">
+			    	<li>
+						                                      	 
+						<?php
+							$cat_value = array(
+								'type'                     => 'sm_portfolio',
+								'child_of'                 => 0,
+								'parent'                   => '',
+								'orderby'                  => 'name',
+								'order'                    => 'ASC',
+								'hide_empty'               => 1,
+								'hierarchical'             => 1,
+								'exclude'                  => '',
+								'include'                  => '',
+								'number'                   => '',
+								'taxonomy'                 => 'portfolio_cat',
+								'pad_counts'               => false 
+
+							); 
+							
+							$categories = get_categories( $cat_value );
+							if($categories):
+								foreach($categories as $cat) {
+									echo '<a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name . '</a>';
+								}
+							endif;	
+						?>
+				
 	            	 </li>                                   	
-	            </ul>-->
-		<?php 
-		/*	$portfolio_terms = get_terms( 'portfolio_cat' );
-
-			if ( ! empty( $portfolio_terms ) && ! is_wp_error( $portfolio_terms ) ){
-			 echo '<ul class="post-categories">';
-			 foreach ( $portfolio_terms as $pterm ) {
-			   echo '<li><a href="'.get_term_link($term->slug, $portfolio_terms) .'" rel="tag">' . $pterm->name . '</a></li>';
-
-			 }
-			 echo '</ul>';
-			}*/
-		?>
-					         
+	            </ul>     
 		            <h2 class="cs-post-title">
 		            	<a href="<?php the_permalink(); ?>" class="colrhvr">
 							<?php the_title(); ?>
@@ -361,7 +371,7 @@ function smoothwriterteammember_shortcode_func($atts,$post_ID) {
 						
 							<li>
 								<em class="fa <?php echo $contact['icon']; ?>"></em> 
-								<a href="#"><?php echo $contact['title_name']; ?></a>
+								<a href="#"><?php echo $contact['text_name']; ?></a>
 							</li> 
 							<?php } ?>                                                                                
 						</ul>
@@ -444,9 +454,7 @@ function sm_blog_shortcode_func($atts,$post_ID) {
 	            <div class="blog_text webkit">
 	                <div class="text">
 	                    <h2 class="heading-color cs-post-title"> 
-	                        <a href="<?php the_permalink(); ?>" class="colrhvr">
-								<?php the_title(); ?>                                    
-							</a>
+	                        <a href="<?php the_permalink(); ?>" class="colrhvr"><?php the_title(); ?></a>
 	                    </h2>
 	                    <ul class="post-options">
 	                        <li>
@@ -454,13 +462,36 @@ function sm_blog_shortcode_func($atts,$post_ID) {
 	                                <a href="<?php the_permalink(); ?>" ><?php the_author(); ?></a>                                        
 							</li>
 	                                        
-							<li class="featured">Featured</li>
 	                        <li>
 	                            <i class="fa fa-list"></i>
-								<a href="" rel="tag">Nature</a> 
+	                            <?php
+									$cat_value = array(
+										'type'                     => 'post',
+										'child_of'                 => 0,
+										'parent'                   => '',
+										'orderby'                  => 'name',
+										'order'                    => 'ASC',
+										'hide_empty'               => 1,
+										'hierarchical'             => 1,
+										'exclude'                  => '',
+										'include'                  => '',
+										'number'                   => '',
+										'taxonomy'                 => 'category',
+										'pad_counts'               => false 
+
+									); 
+									
+									$categories = get_categories( $cat_value );
+									if($categories):
+										foreach($categories as $cat) {
+											echo '<a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name .  '</a>';
+										}
+									endif;	
+								?>
+								
 							</li>
-							
-					<p><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="cs-read-more colr">read more</a></p>
+						</ul>	
+						<p><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="cs-read-more colr">read more</a></p>
 	                </div>
 	            </div>
 	        </article>
@@ -506,23 +537,6 @@ function sm_price_tab_shortcode_func($atts,$post_ID) {
   ));
 ?> 
 
-
-
-<script type="text/javascript">
-// $(function(){
-//     $('.nav-tabs li').on('click', function(event) {
-//         $('.nav-tabs li').removeClass('active'); // remove active class from tabs
-//         $(this).addClass('active'); // add active class to clicked tab
-//     });
-//     $('.nav-tabs li').on('click', function(event) {
-//         $('.tab-content div').removeClass('active');
-//         $('.tab-content div').addClass('active');
-//     });
-
-// });
-
-</script>
-
 <div class="featureTabs">
 
 <div class="tab-nav">
@@ -541,23 +555,23 @@ $meta_data    = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
     <li role="presentation" class="col-sm-4 col-xs-6">
         <a href="#<?php the_ID(); ?>" aria-controls="Blog Posts" role="tab" data-toggle="tab" aria-expanded="false">
        
+        <div class="tab_menu_icon">
+	        <?php
+	          if( $meta_data['tab_icon']) : ?>
+	            <i class="fa  <?php echo $meta_data['tab_icon']; ?>"></i>
+	        <?php else : ?>
+	            <i class="fa fa-list-alt"></i>
+	        <?php endif; ?>
+        </div> 
 
-         <?php
-         	//tab icon
-          if( $meta_data['tab_icon']) : ?>
-            <i class="fa  <?php echo $meta_data['tab_icon']; ?>"></i>
-        <?php else : ?>
-            <i class="fa fa-list-alt"></i>
-        <?php endif; ?> 
-
-
-         <?php
-         	//tab title 
-          if( $meta_data['tab_title']) : ?>
-            <?php echo $meta_data['tab_title']; ?>
-        <?php else : ?>
-           Blog Post
-        <?php endif; ?> 
+        <div class="tab_menu_title">
+	        <?php
+	          if( $meta_data['tab_title']) : ?>
+	            <?php echo $meta_data['tab_title']; ?>
+	        <?php else : ?>
+	           Blog Post
+	        <?php endif; ?> 
+        </div>
 
         </a>
     </li>    

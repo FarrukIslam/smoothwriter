@@ -105,7 +105,7 @@
 				<div class="container">
 					<div class="breadcrumb-inner">
 						<div class="subtitle">
-							<h1 class="cs-page-title">Smoothweriter</h1>
+							<h1 class="cs-page-title"><?php bloginfo('name'); ?></h1>
 						</div>                          
 					</div>
 				</div>

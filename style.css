@@ -1,12 +1,8 @@
 /*
 Theme Name: Smoothwriter
 Author: FarrukIslam
-Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
-Version: 1.3
-
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Description: Smoothwriter is a modernized take on an ever-popular WordPress layout version 1.0
+Author URI : https://farrukislam.github.io/;
 */
 
 
@@ -278,21 +274,6 @@ Main Section
  
 }
 
-/* course accrodion 
-.panel-group .panel {
-    margin-bottom: 0;
-    overflow: hidden;
-    border-radius: 4px;
-    width: 49%;
-    float: left;
-    margin: 0px!important;
-    margin-bottom: 52px;
-}
-
-.panel.panel-default:nth-child(odd) {
-    margin-right: 14px!important;
-   
-}*/
 .panel-group .panel {
     margin-bottom: 0;
     overflow: hidden;
@@ -904,7 +885,7 @@ td.value select {
     width: 100%;
 }
 a.reset_variations {
-    float: left;
+    float: right;
     font-size: 13px;
     margin: 10px 0px;
 }
@@ -936,10 +917,122 @@ span.price {
     right: 0px;
     top: 85px;
     font-size: 15px;
+    pointer-events: none;
+    cursor: default;
 }
 .woocommerce div.product form.cart .button {
     display: none;
 }
 .woocommerce-message {
     display: none;
+}
+fieldset.product-bd-main-cta-layout-one {
+    margin-top: -40px;
+}
+ul.profile-cat {
+    margin: 6px 0px;
+}
+
+ul.profile-cat li a {
+    font-size: 13px;
+    color: #fff;
+    background: #333;
+    padding: 3px 4px;
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+.tab_menu_title {
+    display: none;
+}
+.featureTabs .tab-nav a i, .featureTabs .tab-nav a:visited i {
+    font-size: 30px;
+}
+}
+
+
+/* Comments fomr css */
+
+.comment-form label {
+    display: block;
+    margin: 10px 0;
+}
+.comment-form .form-submit {
+    margin-top: 20px;
+}
+.comment-list {
+    margin-bottom: 20px;
+}
+.comment-author img {
+    float: left;
+    overflow: hidden;
+    display: block;
+    margin-right: 15px;
+}
+.comment-body p {
+    display: block;
+    padding: 20px 0 5px;
+}
+.comments-title {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0 0 20px;
+    color: #666666;
+    font-family: 'Gotham-Book';
+    overflow: hidden;
+}
+.fn {
+    font-weight: bold;
+}
+.comment-list li {
+    margin-bottom: 20px;
+}
+.commentmetadata {
+    padding-top: 10px;
+}
+.commentmetadata a, .reply a{
+    color: #5EBC5E;
+}
+.comment-form .form-submit .submit {
+    border: 0;
+    background-color: #5EBC5E;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 10px;
+    border-radius: 3px;
+}
+.comment-form .form-submit .submit:hover {
+    border: 0;
+    background-color: #6EBC6E;
+}
+
+.comment-info p {
+    width: 49.5%;
+    display: inline-block;
+}
+.comment-info input, .comment-form textarea {
+    width: 100%;
+}
+
+div#comments {
+    padding: 35px 30px;
+}
+.comment-info input, .comment-form textarea {
+    width: 100%;
+    border: 1px solid #E0DDDB;
+}
+.row.woocommer-tab-review-comment {
+    margin: 25px 0px;
+}
+.woocommerce-tabs.wc-tabs-wrapper ul li{
+	list-style: none;
+	margin-bottom:20px;
+	
+}
+.woocommerce-tabs.wc-tabs-wrapper ul li a {
+    background: #333;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 14px;
 }

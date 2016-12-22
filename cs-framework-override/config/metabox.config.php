@@ -90,7 +90,7 @@ $options[]      = array(
       'icon'      => 'fa fa-user',
       'fields'    => array(
         array(
-              'id'    => 'regisnation',
+              'id'    => 'regisnation_name',
               'type'  => 'text',
               'title' => 'Add your Resignation Name',
               'default' => 'Content Writer',
@@ -110,7 +110,12 @@ $options[]      = array(
             array(
               'id'    => 'title_name',
               'type'  => 'text',
-              'title' => 'Add your text',
+              'title' => 'Add your Title text',
+            ),
+            array(
+              'id'    => 'text_name',
+              'type'  => 'text',
+              'title' => 'Add your text Name',
             ),
             
             array(

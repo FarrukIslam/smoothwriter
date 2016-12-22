@@ -39,7 +39,8 @@
 		overflow:hidden;
 	}
 #rightheader{
-	float:right;
+	/*float:right;*/
+	margin:15px;
     width:82%;
 }
 .woocommerce ul.products li.product figure{
@@ -155,8 +156,9 @@ nav.navigation > ul{
 #rightheader .navigation {
     float: left !important;
     position: relative;
-    width: 88%;
+    width: 75%;
 	border-radius: 4px;
+	margin-top:20px;
 }
 #rightheader .navigation .selectnav {
     background: none repeat scroll 0 0 #666666;
@@ -290,8 +292,9 @@ a#btngotop{
 }
 #rightheader .navigation {
 	float:left !important;
-	width:88%;
+	width:33%;
 	position: relative;
+	margin-top:20px;
 }
 #rightheader #searchform{
 	float:right;

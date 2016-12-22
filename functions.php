@@ -114,6 +114,7 @@ if (!class_exists('smoothwriter_scripts_load'))
 			add_image_size('smoothwriterslider1290x560', 1290, 560, true);
 			add_image_size('recentpostwidget150x150', 150, 150, true);
 			add_image_size('portfilio230x172', 230, 172, true);
+			add_image_size('teammember500x500', 500, 500, true);
 			add_image_size('teammember230x172', 220, 165, true);
 			add_image_size('fontpageblog275x185', 275, 185, true);
 
@@ -137,6 +138,16 @@ if (!class_exists('smoothwriter_scripts_load'))
 					'after_widget'  => '</div></div>',
 					'before_title'  => '<header class="cs-heading-title">
 							<h2 class="cs-section-title">',
+					'after_title'   => '</h2>
+						</header>',
+				    ) );
+				register_sidebar( array(
+			        'name' => __( 'Right Sidebar', 'smoothwriter' ),
+			        'id' => 'right-sidebar',
+			        'description' => __( 'Widgets in this area will be shown Right sidebar.', 'smoothwriter' ),
+			        'before_widget' => ' <div class="widget">',
+					'after_widget'  => '</div>',
+					'before_title'  => '<header class="cs-heading-title"><h2 class="cs-section-title">',
 					'after_title'   => '</h2>
 						</header>',
 				    ) );
@@ -175,6 +186,7 @@ function smoothwriter_default_menu(){
 require_once get_template_directory() .'/inc/required_plugins.php';
 require_once get_template_directory() .'/inc/widgets/widgets_category.php';
 require_once get_template_directory() .'/inc/widgets/widgets-recentpost.php';
+require_once get_template_directory() .'/inc/widgets/quick-links.php';
 require_once get_template_directory() .'/inc/custom-post-type.php';
 require_once get_template_directory() .'/inc/shortcodes/fontpage.php';
 require_once get_template_directory() .'/inc/pagination.php';

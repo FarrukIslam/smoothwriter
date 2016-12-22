@@ -112,7 +112,7 @@ $options[]   = array(
     // -----------------------------
     array(
       'name'  => 'sidebar_options',
-      'title' => 'Left Sidbar',
+      'title' => 'Sidbar',
       'icon'  => 'fa fa-th-list',
 
       // begin: fields
@@ -120,9 +120,46 @@ $options[]   = array(
 
         // begin: Sidebar On/Ofi
         array(
-          'id'           => 'enable_sidebar',
+          'id'           => 'enable_sidebar_footer',
           'type'         => 'switcher',
-          'title'        => 'Left Sidebar Enable or Disable',
+          'title'        => 'Footer Sidebar Enable or Disable',
+        ),
+        // begin: Sidebar On/Ofi
+        array(
+          'id'           => 'enable_sidebar_right',
+          'type'         => 'switcher',
+          'title'        => 'Right Sidebar Enable or Disable',
+        ),
+      )
+    ), // end: Sidebar Option 
+
+
+    // -----------------------------
+    // Contact Us      
+    // -----------------------------
+    array(
+      'name'  => 'contact_us',
+      'title' => 'Contact Us',
+      'icon'  => 'fa fa-phone-square',
+
+      // begin: fields
+      'fields'    => array(
+
+        // begin: Sidebar On/Ofi
+        array(
+          'id'           => 'contact_content',
+          'type'         => 'textarea',
+          'title'        => 'Contact Us page content',
+        ),
+        // begin: Sidebar On/Ofi
+         array(
+          'id'      => 'google_map',
+          'type'    => 'text',
+          'help'    => 'Example : UA-71326319-1',
+          'title'   => 'Google Map ID',
+          'attributes' => array(
+            'placeholder' => 'UA-12345678-0'
+          )
         ),
       )
     ), // end: Sidebar Option 
@@ -137,8 +174,7 @@ $options[]   = array(
   'name'     => 'google_analytics',
   'title'    => 'Google Analytics',
   'icon'     => 'fa fa-code',
-  'fields'   => array(
-
+  'fields'   => array( 
     array(
       'id'      => 'ganalytics',
       'type'    => 'text',

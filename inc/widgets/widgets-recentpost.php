@@ -30,20 +30,20 @@ class smoothwriter_recentpost extends WP_Widget{
 			while ( $q -> have_posts() ) : $q -> the_post(); 
 		?>
 		
-		<article class="">
+		<article class="">		
+		<?php
+			if(has_post_thumbnail()){ ?>
 			<figure>
-				<a class='fa fa-hover' href='#' >
-					
-				<?php
-					if(has_post_thumbnail()){ ?>
-						
-						<?php the_post_thumbnail( 'recentpostwidget150x150', array( 'class' => 'img-responsive' ) ); ?>
-						
-					<?php 
-					}
-				?>
-				</a>
+				<a class='fa fa-hover' href='<?php the_permalink(); ?>' >
+				
+				<?php the_post_thumbnail( 'recentpostwidget150x150', array( 'class' => 'img-responsive' ) ); ?>
+					</a>
 			</figure>
+				
+			<?php 
+			}
+		?>
+			
 		    <div class="text">
 		        <h6><a class="colrhvr" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h6>	
 				<time datetime="2013-08-22"><?php the_date('F j, Y'); ?></time>

@@ -1171,7 +1171,7 @@ Blog Medium View
 	margin-left: 230px;
 }
 .blog-medium article .text p {
-	margin-bottom: 0;
+	/*margin-bottom: 0;*/
 }
 .blog-medium article.no-image .text  {
 	margin-left: 0;

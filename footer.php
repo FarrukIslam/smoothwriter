@@ -8,11 +8,14 @@
                 <!-- Container Start -->
                 <div class="container">
                     <!-- Footer Widgets Start -->
-                    
-                    <?php if (is_active_sidebar('footer-sidebar')) : ?>
-				     	<?php dynamic_sidebar( 'footer-sidebar' ); ?>
-				     <?php else : ?> 
-				     <?php endif; ?>
+
+                	<?php $ensfooter = cs_get_option('enable_sidebar_footer'); ?>
+					<?php if($ensfooter) : ?>
+	                    <?php if (is_active_sidebar('footer-sidebar')) : ?>
+					     	<?php dynamic_sidebar( 'footer-sidebar' ); ?>
+					     <?php else : ?> 
+					     <?php endif; ?>
+			    	<?php endif; ?> 
 
                 </div>
                 <!-- Container End -->
