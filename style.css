@@ -4,7 +4,35 @@ Author: FarrukIslam
 Description: Smoothwriter is a modernized take on an ever-popular WordPress layout version 1.0
 Author URI : https://farrukislam.github.io/;
 */
-
+font-face {
+	font-family: 'Conv_DINPRO-REGULAR';
+	src: url('fonts/DINPRO-REGULAR.eot');
+	src: local('?'), url('fonts/DINPRO-REGULAR.woff') format('woff'), url('../fonts/DINPRO-REGULAR.ttf') format('truetype'), url('../fonts/DINPRO-REGULAR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DinProReg';
+	src: url('fonts/DINPRO-REGULAR.eot');
+	src: local('?'), url('fonts/DINPRO-REGULAR.ttf') format('truetype'), url('../fonts/DINPRO-REGULAR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'DINPro';
+    src: url('fonts/DINPRO-LIGHT.eot');
+    src: url('fonts/DINPRO-LIGHT.eot?#iefix') format('embedded-opentype'),
+        url('fonts/DINPRO-LIGHT.ttf') format('truetype'), url('../fonts/DINPRO-LIGHT.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'DinProMed';
+	src: url('fonts/DINPRO-MEDIUM.eot');
+	src: local('?'), url('fonts/DINPRO-MEDIUM.ttf') format('truetype'), url('../fonts/DINPRO-MEDIUM.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .img-responsive{
 	width: 100%;
@@ -1035,4 +1063,8 @@ div#comments {
     padding: 5px 10px;
     color: #fff;
     font-size: 14px;
+}
+body,p{
+	font-family: 'DINPro';
+	font-size:16px;
 }
