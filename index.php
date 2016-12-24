@@ -51,15 +51,15 @@
 												<li>
 													<i class="fa fa-user"></i><a href="<?php the_permalink(); ?>"><?php the_author(); ?> </a>                
 												</li>
+											
 												<li>
-													<i class="fa fa-list"></i>
-
-												<?php
-												echo get_the_tag_list('<a>','</a> <a> ','</a>');
-												?>
-													<!-- <a href="#" rel="tag">Blog </a>,  
-													<a href="#" rel="tag">Nature </a>,  
-													<a href="#" rel="tag">Statfort </a> -->                           		
+						                            <i class="fa fa-list"></i>
+						                            <?php
+												    	$terms = get_terms( 'category' );
+												    	foreach ($terms as $key => $term) {
+												    		echo '<a href="' . get_category_link( $term->term_id ) . '">' . $term->name .  '</a>';
+												    	}		   
+													?>                          		
 												</li>		  
 											</ul>
 											<p><?php the_excerpt(); ?> <a href="<?php the_permalink(); ?>" class="cs-read-more colr">read more </a></p>

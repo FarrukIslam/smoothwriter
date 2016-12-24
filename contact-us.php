@@ -2,13 +2,6 @@
 /* Template Name: Contact Us */
 get_header(); ?>
 
-<div class="header_element"></div>
-<div class="row">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58312.20096075815!2d89.21486304593506!3d24.012984002223924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe84d98fa5bf3d%3A0xb038902617eb9884!2sPabna!5e0!3m2!1sen!2sbd!4v1481649225699" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-<div class="clear"></div>    
-			  
-
 <div class="container">
 	<!-- Row Start -->
 	<div class="row">

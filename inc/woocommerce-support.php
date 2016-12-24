@@ -49,16 +49,6 @@ exit;
 }
 }
 
-
-add_filter( 'wc_add_to_cart_message', 'bbloomer_custom_add_to_cart_message' );
-  
-function bbloomer_custom_add_to_cart_message() {
-  
-echo '<style>.woocommerce-message {display: none !important;}</style>';
- 
-}
-
-
 //product content
 //remove result count
 remove_action('woocommerce_before_shop_loop_item','woocommerce_template_loop_product_link_open', 20);

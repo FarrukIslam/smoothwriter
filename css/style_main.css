@@ -683,7 +683,6 @@ Main Section
 #main {
 	position: relative;
 	z-index: 88;
-	padding-top: 38px;	
 }
 .home .our_causes {
 	padding-top: 38px;
@@ -937,10 +936,12 @@ Our Staff
 .our_staff.our-carousel article p{
 	white-space: normal;
 }
-.our_staff article figure ,.our_staff  article figure img{
-	float: left;
-	width: 100%;
-	overflow: hidden;
+.our_staff article figure, .our_staff article figure img {
+    float: left;
+    width: 175px;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 175px;
 }
 .our_staff article figure figcaption {
 	float: left;

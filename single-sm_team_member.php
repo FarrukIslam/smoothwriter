@@ -40,30 +40,11 @@
 
 				<ul class="profile-cat">
 					<li>
-				                                      	 
 					<?php
-						$cat_value = array(
-							'type'                     => 'sm_team_member',
-							'child_of'                 => 0,
-							'parent'                   => '',
-							'orderby'                  => 'name',
-							'order'                    => 'ASC',
-							'hide_empty'               => 1,
-							'hierarchical'             => 1,
-							'exclude'                  => '',
-							'include'                  => '',
-							'number'                   => '',
-							'taxonomy'                 => 'sm_team_member_cat',
-							'pad_counts'               => false 
-
-						); 
-						
-						$categories = get_categories( $cat_value );
-						if($categories):
-							foreach($categories as $cat) {
-								echo '<a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name . '</a>';
-							}
-						endif;	
+				    	$terms = get_terms( 'sm_team_member_cat' );
+				    	foreach ($terms as $key => $term) {
+				    		echo '<a href="' . get_category_link( $term->term_id ) . '">' . $term->name .  '</a>';
+				    	}		   
 					?>
 					</li>  
 				</ul>	

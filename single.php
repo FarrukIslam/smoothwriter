@@ -16,13 +16,16 @@
 		            <ul class="post-options">
 		                                	
 		                <li><i class="fa fa-calendar"></i><time><?php the_time('F j, Y') ?></time></li>
-		                <li><i class="fa fa-user"></i><a href="<?php the_permalink(); ?>"><?php the_author(); ?></a></li>
-		                
-						<li><i class="fa fa-align-justify"></i>
-							<?php
-								echo get_the_tag_list('<a>','</a> <a> ','</a>');
-							?>
-						</li>                                    
+		                <li><i class="fa fa-user"></i><a href="<?php the_permalink(); ?>"><?php the_author(); ?></a></li>  
+						<li>
+                            <i class="fa fa-list"></i>
+                            <?php
+						    	$terms = get_terms( 'category' );
+						    	foreach ($terms as $key => $term) {
+						    		echo '<a href="' . get_category_link( $term->term_id ) . '">' . $term->name .  '</a>';
+						    	}		   
+							?>                          		
+						</li>	                                 
 		                <li><i class="fa fa-comment-o"></i><a href="<?php the_permalink(); ?>"><?php comments_popup_link('No Comment', '% Comment', 'bestblog'); ?></a>   
 		                </li>
 		            </ul>

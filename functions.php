@@ -134,7 +134,7 @@ if (!class_exists('smoothwriter_scripts_load'))
 			        'name' => __( 'Footer Sidebar', 'smoothwriter' ),
 			        'id' => 'footer-sidebar',
 			        'description' => __( 'Widgets in this area will be shown Footer.', 'smoothwriter' ),
-			        'before_widget' => '<div class="col-md-3"><div class="widget">',
+			        'before_widget' => '<div class="col-md-3 col-sm-12 col-xs-12"><div class="widget">',
 					'after_widget'  => '</div></div>',
 					'before_title'  => '<header class="cs-heading-title">
 							<h2 class="cs-section-title">',
@@ -186,7 +186,7 @@ function smoothwriter_default_menu(){
 require_once get_template_directory() .'/inc/required_plugins.php';
 require_once get_template_directory() .'/inc/widgets/widgets_category.php';
 require_once get_template_directory() .'/inc/widgets/widgets-recentpost.php';
-require_once get_template_directory() .'/inc/widgets/quick-links.php';
+//require_once get_template_directory() .'/inc/widgets/quick-links.php';
 require_once get_template_directory() .'/inc/custom-post-type.php';
 require_once get_template_directory() .'/inc/shortcodes/fontpage.php';
 require_once get_template_directory() .'/inc/pagination.php';

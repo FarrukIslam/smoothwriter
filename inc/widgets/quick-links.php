@@ -1,11 +1,4 @@
-
-
 <?php 
-
-
-/* ===================================
-repeatable quick link 
-=====================================*/
 
 class quick_links extends WP_Widget
 	{

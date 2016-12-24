@@ -242,34 +242,14 @@ function sw_portfolio_shortcode_func($atts,$post_ID) {
 			    </figure>                            
 			    <div class="text fullwidth">
 			    <ul class="post-categories">
-			    	<li>
-						                                      	 
-						<?php
-							$cat_value = array(
-								'type'                     => 'sm_portfolio',
-								'child_of'                 => 0,
-								'parent'                   => '',
-								'orderby'                  => 'name',
-								'order'                    => 'ASC',
-								'hide_empty'               => 1,
-								'hierarchical'             => 1,
-								'exclude'                  => '',
-								'include'                  => '',
-								'number'                   => '',
-								'taxonomy'                 => 'portfolio_cat',
-								'pad_counts'               => false 
 
-							); 
-							
-							$categories = get_categories( $cat_value );
-							if($categories):
-								foreach($categories as $cat) {
-									echo '<a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name . '</a>';
-								}
-							endif;	
-						?>
-				
-	            	 </li>                                   	
+			    <?php 
+			    	$terms = get_terms( 'portfolio_cat' );
+			    	foreach ($terms as $key => $term) {
+			    		echo '<li>'.$term->name.'</li>';
+			    	}
+			    ?>
+			    	           	                                   	
 	            </ul>     
 		            <h2 class="cs-post-title">
 		            	<a href="<?php the_permalink(); ?>" class="colrhvr">
@@ -465,28 +445,10 @@ function sm_blog_shortcode_func($atts,$post_ID) {
 	                        <li>
 	                            <i class="fa fa-list"></i>
 	                            <?php
-									$cat_value = array(
-										'type'                     => 'post',
-										'child_of'                 => 0,
-										'parent'                   => '',
-										'orderby'                  => 'name',
-										'order'                    => 'ASC',
-										'hide_empty'               => 1,
-										'hierarchical'             => 1,
-										'exclude'                  => '',
-										'include'                  => '',
-										'number'                   => '',
-										'taxonomy'                 => 'category',
-										'pad_counts'               => false 
-
-									); 
-									
-									$categories = get_categories( $cat_value );
-									if($categories):
-										foreach($categories as $cat) {
-											echo '<a href="' . get_category_link( $cat->term_id ) . '">' . $cat->name .  '</a>';
-										}
-									endif;	
+							    	$terms = get_terms( 'category' );
+							    	foreach ($terms as $key => $term) {
+							    		echo '<a href="' . get_category_link( $term->term_id ) . '">' . $term->name .  '</a>';
+							    	}		   
 								?>
 								
 							</li>
