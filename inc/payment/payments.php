@@ -2,7 +2,7 @@
 // Database variables
 $host = "localhost"; //database location
 $user = "root"; //database username
-$pass = ""; //database password
+$pass = "admin"; //database password
 $db_name = "smwpayment"; //database name
 
 // PayPal settings
@@ -11,9 +11,21 @@ $return_url = 'http://localhost/smoothwriter/inc/paypal/payment-successful.php';
 $cancel_url = 'http://localhost/smoothwriter/inc/paypal/payment-cancelled.html';
 $notify_url = 'http://localhost/smoothwriter/inc/paypal/payments.php';
 
+
+$new_slide  = $_POST['item_number'];
+$edit_slide = $_POST['item_number2'];
+$time_price = $_POST['item_time'];
+
+$newprice  = 15;
+$editprice = 5;
+
+$value   = $new_slide * $newprice;
+$value2  = $edit_slide * $editprice;
+$total = $value + $value2 - $time_price ;
 $item_name = $_POST['item_name'];
 $item_number = $_POST['item_number'];
-$item_amount = $_POST['item_amount'];
+$item_number = $_POST['item_number'];
+$item_amount = $total ;
 
 
 // Include Functions

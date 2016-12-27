@@ -1071,3 +1071,6 @@ body,p{
     margin-bottom: 25px;
     background: #333 !important;
 }
+table.poweropint tr th {
+    border: none;
+}
