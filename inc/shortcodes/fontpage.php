@@ -618,7 +618,16 @@ function sm_price_powerpoint_func($atts,$post_ID) {
    extract( shortcode_atts( array(
     'subtitle1' => 'Number of New Slide',
     'subtitle2' => 'Number of Edit Slide',
-    'deadline'   => 'Deadline',
+    'deadline'  => 'Deadline',
+    'hour24' 	=> 0,
+    'days2' 	=> 2,
+    'days3' 	=> 4,
+    'days45' 	=> 6,
+    'days69' 	=> 8,
+    'daysmore10'=> 10,
+
+
+
    ), $atts) );
 
 	ob_start();
@@ -642,12 +651,12 @@ function sm_price_powerpoint_func($atts,$post_ID) {
 			       		<th><?php echo $deadline; ?></th>
 			       		<td>
 			       			<select name="item_time">
-			       				<option value="0">24 Hours</option>
-			       				<option value="2">2 Days</option>
-			       				<option value="4">3 Days</option>
-			       				<option value="6">4-5 Days</option>
-			       				<option value="8">6-9 Days</option>
-			       				<option value="10">10 Days or more</option>
+			       				<option value="<?php echo $hour24; ?>">24 Hours</option>
+			       				<option value="<?php echo $days2; ?>">2 Days</option>
+			       				<option value="<?php echo $days3; ?>">3 Days</option>
+			       				<option value="<?php echo $days45; ?>">4-5 Days</option>
+			       				<option value="<?php echo $days69; ?>">6-9 Days</option>
+			       				<option value="<?php echo $daysmore10; ?>">10 Days or more</option>
 			       			</select>
 			       		</td>
 			       	</tr>
