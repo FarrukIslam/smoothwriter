@@ -242,17 +242,7 @@ function sw_portfolio_shortcode_func($atts,$post_ID) {
 			    <figure><a href="<?php the_permalink(); ?>">
 			    <img src="<?php echo $image[0]; ?>" alt=""></a>
 			    </figure>                            
-			    <div class="text fullwidth">
-			    <ul class="post-categories">
-
-			    <?php 
-			    	$terms = get_terms( 'portfolio_cat' );
-			    	foreach ($terms as $key => $term) {
-			    		echo '<li>'.$term->name.'</li>';
-			    	}
-			    ?>
-			    	           	                                   	
-	            </ul>     
+			    <div class="text fullwidth"> 
 		            <h2 class="cs-post-title">
 		            	<a href="<?php the_permalink(); ?>" class="colrhvr">
 							<?php the_title(); ?>

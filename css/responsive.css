@@ -97,10 +97,11 @@ a#btngotop{
 }
 .col-md-3{
 	width:30%;
-	float:left;
+	float:none;
 }
+
 #footer-widgets .widget{
-	width:23.5% !important;
+	width:100% !important;
 }
 .sortby{
 	float:left;
@@ -714,5 +715,11 @@ a.btnshowmore{
 }
 #header .container {
     width: 1170px;
+}
+}
+
+@media (max-width: 1024px) {
+.prieing_table_item {
+    margin: 100px 0px 20px;
 }
 }
