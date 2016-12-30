@@ -720,6 +720,10 @@ a.btnshowmore{
 
 @media (max-width: 1024px) {
 .prieing_table_item {
-    margin: 100px 0px 20px;
+    margin: 100px 0px 50px !important;
+}
+.featureTabs .tab-content .featureIcon {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 }

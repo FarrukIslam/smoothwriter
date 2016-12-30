@@ -557,6 +557,7 @@ ul.list-unstyled.row li {
 }
 .services-container header.cs-heading-title h2 {
     color: #222;
+    line-height: 45px;
 }
 .services-container:before {
     background: transparent;
