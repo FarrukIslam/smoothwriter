@@ -342,12 +342,15 @@ ul.cls-news-ticker li{
     max-width: 100% !important;
     margin: 8px auto !important;
    }
+/*   
 .container {
     width: 1170px;
 }
 #header .container {
     width: 1170px;
 }
+
+*/
 #footer-widgets .widget {
     float: left;
     width: 100%;
@@ -383,11 +386,11 @@ div#logo {
     margin: 0;
 }
 .featureTabs .tab-nav ul {
-    display: -webkit-box;
+   /* display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;
+    display: flex;*/
 }
 .featureTabs .tab-nav li.active {
     margin: 0;
@@ -481,14 +484,9 @@ a.btn.btn-lg.btn-primary {
     padding-bottom: 30px;
 }
 
-
-
-
-
-
-
 ul.list-unstyled.row li {
     list-style: none;
+    width: 20%;
 }
 
 

@@ -941,7 +941,14 @@ Our Staff
     width: 175px;
     overflow: hidden;
     border-radius: 50%;
-    height: 175px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px !important;
 }
 .our_staff article figure figcaption {
 	float: left;

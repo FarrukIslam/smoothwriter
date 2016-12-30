@@ -287,14 +287,14 @@ a#btngotop{
 .event.eventlisting article .text{
 	margin:0 ;
 }
-#rightheader{
-	float:left;
+#rightheader {
+    float: left;
+    margin-top: 20px;
 }
 #rightheader .navigation {
-	float:left !important;
-	width:33%;
-	position: relative;
-	margin-top:20px;
+    float: left !important;
+    width: 88%;
+    position: relative;
 }
 #rightheader #searchform{
 	float:right;
@@ -430,8 +430,9 @@ a#btngotop{
 .breadcrumb{
 	margin-bottom:20px;
 }
-.services article{
-	width:50%;
+.services article {
+    width: 100%;
+    margin: auto;
 }
 img.alignleft{
 	width:100%;
@@ -697,5 +698,21 @@ a.btnshowmore{
 }
 .password_protected{
 	padding:0 10px;
+}
+}
+
+@media screen and (max-width: 480px){
+.featureTabs .tab-nav ul li:nth-child(2n+1) {
+    clear: none;
+	}
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+  max-width: 1170px;
+}
+#header .container {
+    width: 1170px;
 }
 }

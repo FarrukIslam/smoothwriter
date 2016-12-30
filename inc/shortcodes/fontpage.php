@@ -582,13 +582,13 @@ $meta_data    = get_post_meta( get_the_ID(), 'pricing_tab_option', true );
 	      <p><a href="<?php the_permalink(); ?>" title="" class="btn btn-lg btn-primary">Get Started</a></p>
 	    </div>
 
-	    <div class="col-md-4 col-sm-12 col-xs-12">
+	    <div class="col-md-4">
 	    	<?php if($meta_data['product_id']) : ?>
 	    	<?php echo do_shortcode('[products ids="'.$meta_data['product_id'].'"] '); ?>
 	    	<?php else : ?>
 	    	<?php echo do_shortcode('[sm_price_powerpoint] '); ?>
 	    	<?php endif ?>
-	    </div>
+	   </div>
 	    
 	  </div><!-- end row -->
 	</div><!-- end tab pane -->
@@ -632,43 +632,45 @@ function sm_price_powerpoint_func($atts,$post_ID) {
 
 	ob_start();
 	?>
-    <form class="paypal" action="<?php echo get_template_directory_uri(); ?>/inc/payment/payments.php" method="post" id="paypal_form" target="_blank">
-		<input type="hidden" name="cmd" value="_xclick" />
-		<div id="pricing-table" class="clear">
-		 
-		    <div class="plan" id="most-popular">
-		    				
-		       <table class="poweropint">
-			       	<tr>
-			       		<th><?php echo $subtitle1; ?></th>
-			       		<td><input type="text" name="item_number" class="input_pslider"></td>
-			       	</tr>
-			       	<tr>
-			       		<th><?php echo $subtitle2; ?></th>
-			       		<td><input type="text" name="item_number2" class="input_pslider"></td>
-			       	</tr>
-			       	<tr>
-			       		<th><?php echo $deadline; ?></th>
-			       		<td>
-			       			<select name="item_time">
-			       				<option value="<?php echo $hour24; ?>">24 Hours</option>
-			       				<option value="<?php echo $days2; ?>">2 Days</option>
-			       				<option value="<?php echo $days3; ?>">3 Days</option>
-			       				<option value="<?php echo $days45; ?>">4-5 Days</option>
-			       				<option value="<?php echo $days69; ?>">6-9 Days</option>
-			       				<option value="<?php echo $daysmore10; ?>">10 Days or more</option>
-			       			</select>
-			       		</td>
-			       	</tr>
+	<div class="col-md-4">
+	    <form class="paypal" action="<?php echo get_template_directory_uri(); ?>/inc/payment/payments.php" method="post" id="paypal_form" target="_blank">
+			<input type="hidden" name="cmd" value="_xclick" />
+			<div id="pricing-table" class="clear">
+			 
+			    <div class="plan" id="most-popular">
+			    				
+			       <table class="poweropint">
+				       	<tr>
+				       		<th><?php echo $subtitle1; ?></th>
+				       		<td><input type="text" name="item_number" class="input_pslider"></td>
+				       	</tr>
+				       	<tr>
+				       		<th><?php echo $subtitle2; ?></th>
+				       		<td><input type="text" name="item_number2" class="input_pslider"></td>
+				       	</tr>
+				       	<tr>
+				       		<th><?php echo $deadline; ?></th>
+				       		<td>
+				       			<select name="item_time">
+				       				<option value="<?php echo $hour24; ?>">24 Hours</option>
+				       				<option value="<?php echo $days2; ?>">2 Days</option>
+				       				<option value="<?php echo $days3; ?>">3 Days</option>
+				       				<option value="<?php echo $days45; ?>">4-5 Days</option>
+				       				<option value="<?php echo $days69; ?>">6-9 Days</option>
+				       				<option value="<?php echo $daysmore10; ?>">10 Days or more</option>
+				       			</select>
+				       		</td>
+				       	</tr>
 
-		       </table>
-		       
-		        <input class="submint-btn signup" type="submit" name="submit" value="Pay With Paypal"/> 
-		    </div>
+			       </table>
+			       
+			        <input class="submint-btn signup" type="submit" name="submit" value="Pay With Paypal"/> 
+			    </div>
 
-		</div>
+			</div>
 
-	</form>
+		</form>
+	</div>
 
 	 <?php 
 	 $html = ob_get_contents();

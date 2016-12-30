@@ -27,7 +27,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<div class="col-md-4 col-sm-12 col-xs-12 prieing_table_item">
+<div class="col-md-4 prieing_table_item">
 <div <?php post_class(); ?>>
 
 	<div id="pricing-table" class="clear">
